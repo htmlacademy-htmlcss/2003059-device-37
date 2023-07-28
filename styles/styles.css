@@ -48,7 +48,7 @@ body {
   background-color: #FFFFFF;
 }
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -57,7 +57,7 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 .title {
   font-family: "Raleway", "Arial", sans-serif;
@@ -85,6 +85,7 @@ body {
 
 .user-menu {
   background-color: #FFE17F;
+  color: #000000;
 }
 
 .form-search-input {
@@ -105,6 +106,10 @@ body {
 .user-menu-link {
   color: #000000;
   text-decoration: none;
+}
+
+.user-logout {
+  opacity: .3;
 }
 
 .user-count {
@@ -247,4 +252,122 @@ font-weight: 700;
   color: #FFFFFF;
   font-size: 16px;
   line-height: 20px;
+}
+
+.social-link, .footer-logo-developer {
+  color: #FFFFFF;
+}
+/* Catalog */
+
+/* Catalog-header */
+
+.breadcrumbs-link {
+  color: #000000;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+/* Catalog-filter */
+
+.catalog-filter {
+  background-color: #F0F0F0;
+  color: #000000;
+}
+
+.subtitle {
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.catalog-filter-name {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+}
+
+.price-text {
+  font-size: 14px;
+  line-height: 20px;
+  opacity: .3;
+}
+
+.catalog-filter-list {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Products */
+
+.sorting-wrapper {
+  background-color: #F0F0F0;
+  color: #000000;
+}
+
+.sorting-control {
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.product-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+}
+
+.product-price {
+  line-height: normal;
+}
+
+.product-show-more {
+  background-color: transparent;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.pagination {
+  background-color: #EBEBEB;
+}
+
+.pagination-button {
+  color: inherit;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.pagination-button-current {
+  opacity: .3;
+}
+
+.pagination-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  text-decoration: none;
+  opacity: .3;
+}
+
+.pagination-link-current {
+  opacity: .6;
 }
