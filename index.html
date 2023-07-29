@@ -8,30 +8,34 @@
 </head>
 <body>
   <header class="page-header">
+    <div class="container">
 
-    <a class="header-logo" href="index.html" aria-current="page">
-      <img class="header-logo-img" src="images/logo-dark.svg" width="145" height="36" alt="Логотип магазина Девайс.">
-    </a>
+      <div class="logo-wrapper">
+        <a class="header-logo" href="index.html" aria-current="page">
+          <img class="header-logo-img" src="images/logo-dark.svg" width="145" height="36" alt="Логотип магазина Девайс.">
+        </a>
+      </div>
 
-    <div class="user-menu">
-      <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
-        <input class="form-search-input" type="search" name="search" placeholder="Поиск по сайту">
-        <button class="form-search-button" type="submit">Найти</button>
-      </form>
+      <div class="user-menu">
+        <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
+          <input class="form-search-input" type="search" name="search" placeholder="Поиск по сайту">
+          <button class="form-search-button" type="submit">Найти</button>
+        </form>
 
-      <ul class="user-menu-list">
-        <li class="user-menu-item">
-          <a class="user-menu-link user-login" href="#">Войти</a>
-        </li>
-        <li class="user-menu-item">
-          <a class="user-menu-link user-compare" href="#">Сравнить</a>
-        </li>
-        <li class="user-menu-item">
-          <a class="user-menu-link user-cart" href="#">Корзина
-            <span class="user-count">2</span>
-          </a>
-        </li>
-      </ul>
+        <ul class="user-menu-list">
+          <li class="user-menu-item user-login">
+            <a class="user-menu-link" href="#">Войти</a>
+          </li>
+          <li class="user-menu-item user-compare">
+            <a class="user-menu-link" href="#">Сравнить</a>
+          </li>
+          <li class="user-menu-item user-cart">
+            <a class="user-menu-link" href="#">Корзина
+              <span class="user-count">2</span>
+            </a>
+          </li>
+        </ul>
+      </div>
 
       <nav class="menu">
         <ul class="menu-list">
@@ -87,138 +91,171 @@
   <main class="page-main main-container">
     <h1 class="visually-hidden">Интернет-магазин девайсов.</h1>
 
-    <section class="slider">
-      <h2 class="visually-hidden">Лучшие предложения.</h2>
-      <ol class="slider-list">
-        <li class="slider-item slider-current">
-          <h3 class="visually-hidden">Квадрокоптер.</h3>
+    <div class="container">
+      <section class="slider">
+        <h2 class="visually-hidden">Лучшие предложения.</h2>
+        <ol class="slider-list">
+          <li class="slider-item slider-item-current">
+            <h3 class="visually-hidden">Квадрокоптер.</h3>
 
-          <img class="slider-img" src="images/slider-1.png" width="560" height="560" alt="Баннер с квадрокоптером.">
+            <div class="slider-img-wrapper">
+              <img class="slider-img" src="images/slider-1.png" width="560" height="560" alt="Баннер с квадрокоптером.">
+            </div>
 
-          <p class="slider-title title">Порхает как бабочка, жалит как пчела!</p>
-          <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-          <a class="slider-button-more button" href="#">Подробнее</a>
+            <div class="slider-content-wrapper">
+              <p class="slider-title title">Порхает как бабочка, жалит как пчела!</p>
+              <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <a class="slider-button-more button" href="#">Подробнее</a>
 
-          <dl class="slider-features feature">
-            <dt class="feature-value">800 м</dt>
-            <dd class="feature-name">Дальность полета</dd>
-            <dt class="feature-value">50 м</dt>
-            <dd class="feature-name">Радиус поражения</dd>
-          </dl>
-        </li>
+              <dl class="slider-features-list">
+                <div class="slider-features-item feature">
+                  <dt class="feature-value">800 м</dt>
+                  <dd class="feature-name">Дальность полета</dd>
+                </div>
+                <div class="slider-features-item feature">
+                  <dt class="feature-value">50 м</dt>
+                  <dd class="feature-name">Радиус поражения</dd>
+                </div>
+              </dl>
+            </div>
+          </li>
 
-        <li class="slider-item">
-          <h3 class="visually-hidden">Фитнес-браслет.</h3>
+          <li class="slider-item">
+            <h3 class="visually-hidden">Фитнес-браслет.</h3>
 
-          <img class="slider-img" src="images/slider-2.png" width="560" height="560" alt="Баннер с фитнес-браслетом.">
+            <div class="slider-img-wrapper">
+              <img class="slider-img" src="images/slider-2.png" width="560" height="560" alt="Баннер с фитнес-браслетом.">
+            </div>
 
-          <p class="slider-title title">Худеем правильно!</p>
-          <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-          <a class="slider-button-more button" href="#">Подробнее</a>
+            <div class="slider-content-wrapper">
+              <p class="slider-title title">Худеем правильно!</p>
+              <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a class="slider-button-more button" href="#">Подробнее</a>
 
-          <dl class="slider-features feature">
-            <dt class="feature-value">48 часов</dt>
-            <dd class="feature-name">Без подзарядки</dd>
-          </dl>
-        </li>
+              <dl class="slider-features-list">
+                <div class="slider-features-item feature">
+                  <dt class="feature-value">48 часов</dt>
+                  <dd class="feature-name">Без подзарядки</dd>
+                </div>
+              </dl>
+            </div>
+          </li>
 
-        <li class="slider-item">
-          <h3 class="visually-hidden">Монопод.</h3>
-          <img class="slider-img" src="images/slider-3.png" width="560" height="560" alt="Баннер с моноподом (селфи-палкой).">
+          <li class="slider-item">
+            <h3 class="visually-hidden">Монопод.</h3>
 
-          <p class="slider-title title">Делай селфи, как Бен Стиллер! </p>
-          <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-          <a class="slider-button-more button" href="#">Подробнее</a>
+            <div class="slider-img-wrapper">
+              <img class="slider-img" src="images/slider-3.png" width="560" height="560" alt="Баннер с моноподом (селфи-палкой).">
+            </div>
 
-          <dl class="slider-features feature">
-            <dt class="feature-value">8,5 м</dt>
-            <dd class="feature-name">Длина палки</dd>
-            <dt class="feature-value">5 кг</dt>
-            <dd class="feature-name">Вес палки</dd>
-            <dt class="feature-value">Карбон</dt>
-            <dd class="feature-name">Материал</dd>
-          </dl>
-        </li>
-      </ol>
+            <div class="slider-content-wrapper">
+              <p class="slider-title title">Делай селфи, <br>как Бен Стиллер! </p>
+              <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+              <a class="slider-button-more button" href="#">Подробнее</a>
 
-      <button class="slider-button slider-prev" type="button">
-        <span class="visually-hidden">Предыдущий слайд.</span>
-      </button>
-      <button class="slider-button slider-next" type="button">
-        <span class="visually-hidden">Следующий слайд.</span>
-      </button>
+              <dl class="slider-features-list">
+                <div class="slider-features-item feature">
+                  <dt class="feature-value">8,5 м</dt>
+                  <dd class="feature-name">Длина палки</dd>
+                </div>
+                <div class="slider-features-item feature">
+                  <dt class="feature-value">5 кг</dt>
+                  <dd class="feature-name">Вес палки</dd>
+                </div>
+                <div class="slider-features-item feature">
+                  <dt class="feature-value">Карбон</dt>
+                  <dd class="feature-name">Материал</dd>
+                </div>
+              </dl>
+            </div>
+          </li>
+        </ol>
 
-      <ol class="slider-controls slider-control">
-        <li class="slider-control-item">
-          <button class="slide-control-button" type="button">
-            <span class="visually-hidden">Первый слайд.</span>
+        <div class="slider-button-wrapper">
+          <button class="slider-button slider-prev" type="button">
+            <span class="visually-hidden">Предыдущий слайд.</span>
           </button>
-        </li>
-        <li class="slider-control-item">
-          <button class="slide-control-button" type="button">
-            <span class="visually-hidden">Второй слайд.</span>
+          <button class="slider-button slider-next" type="button">
+            <span class="visually-hidden">Следующий слайд.</span>
           </button>
-        </li>
-        <li class="slider-control-item">
-          <button class="slide-control-button" type="button">
-            <span class="visually-hidden">Третий слайд.</span>
-          </button>
-        </li>
-      </ol>
-    </section>
+        </div>
 
-    <section class="categories">
-      <h2 class="visually-hidden">Категории товаров.</h2>
-      <ul class="categories-list category">
-        <li class="category-item">
-          <a class="category-link" href="#">Виртуальная реальность</a>
-        </li>
-        <li class="category-item">
-          <a class="category-link" href="catalog.html">Моноподы для селфи</a>
-        </li>
-        <li class="category-item">
-          <a class="category-link" href="#">Экшн-камеры</a>
-        </li>
-        <li class="category-item">
-          <a class="category-link" href="#">Фитнес-браслеты</a>
-        </li>
-        <li class="category-item">
-          <a class="category-link" href="#">Умные часы</a>
-        </li>
-        <li class="category-item">
-          <a class="category-link" href="#">Квадрокоптеры</a>
-        </li>
-      </ul>
-    </section>
+        <ol class="slider-control">
+          <li class="slider-control-item">
+            <button class="slide-control-button" type="button">
+              <span class="visually-hidden">Первый слайд.</span>
+            </button>
+          </li>
+          <li class="slider-control-item">
+            <button class="slide-control-button" type="button">
+              <span class="visually-hidden">Второй слайд.</span>
+            </button>
+          </li>
+          <li class="slider-control-item">
+            <button class="slide-control-button" type="button">
+              <span class="visually-hidden">Третий слайд.</span>
+            </button>
+          </li>
+        </ol>
+      </section>
+
+      <section class="categories">
+        <h2 class="visually-hidden">Категории товаров.</h2>
+        <ul class="categories-list category">
+          <li class="category-item">
+            <a class="category-link" href="#">Виртуальная реальность</a>
+          </li>
+          <li class="category-item">
+            <a class="category-link" href="catalog.html">Моноподы для селфи</a>
+          </li>
+          <li class="category-item">
+            <a class="category-link" href="#">Экшн-камеры</a>
+          </li>
+          <li class="category-item">
+            <a class="category-link" href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="category-item">
+            <a class="category-link" href="#">Умные часы</a>
+          </li>
+          <li class="category-item">
+            <a class="category-link" href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </section>
+    </div>
 
     <section class="services">
       <h2 class="visually-hidden">Услуги.</h2>
 
-      <div class="services-buttons">
-        <button class="services-button services-button-current button" type="button">Доставка</button>
-        <button class="services-button button" type="button">Гарантия</button>
-        <button class="services-button button" type="button">Кредит</button>
-      </div>
+      <div class="container">
+        <div class="services-buttons">
+          <button class="services-button services-button-current button" type="button">Доставка</button>
+          <button class="services-button button" type="button">Гарантия</button>
+          <button class="services-button button" type="button">Кредит</button>
+        </div>
 
-      <ul class="services-list">
-        <li class="services-item services-item-current">
-          <h3 class="services-title services-delivery title">Доставка</h3>
-          <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </li>
-        <li class="services-item">
-          <h3 class="services-title services-warranty title">Гарантия</h3>
-          <p class="services-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же..</p>
-        </li>
-        <li class="services-item">
-          <h3 class="services-title services-credit title">Кредит</h3>
-          <p class="services-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-        </li>
-      </ul>
+        <ul class="services-list">
+          <li class="services-item services-item-current">
+            <h3 class="services-title services-delivery title">Доставка</h3>
+            <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </li>
+          <li class="services-item">
+            <h3 class="services-title services-warranty title">Гарантия</h3>
+            <p class="services-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же..</p>
+          </li>
+          <li class="services-item">
+            <h3 class="services-title services-credit title">Кредит</h3>
+            <p class="services-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="delivery">
       <h2 class="visually-hidden">Заказ доставки.</h2>
-      <button class="delivery-button" type="button">Доставим редкий товар под заказ</button>
+      <div class="container">
+        <button class="delivery-button" type="button">Доставим редкий товар под заказ</button>
+      </div>
     </section>
 
     <section class="about">

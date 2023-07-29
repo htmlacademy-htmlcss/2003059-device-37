@@ -7,36 +7,39 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header class="page-header">
-    <a class="header-logo" href="index.html">
-      <img class="header-logo-img" src="images/logo-dark.svg" width="145" height="36" alt="Логотип магазина Девайс.">
-    </a>
 
-    <div class="user-menu">
-      <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
-        <input class="form-search-input" type="search" name="search" placeholder="Поиск по сайту" value="Текст поиска">
-        <button class="form-search-button" type="submit">Найти</button>
-      </form>
+  <header class="page-header catalog-header">
+    <div class="container">
 
-      <ul class="user-menu-list user-menu-login">
-        <li class="user-menu-item">
-          <a class="user-menu-link user-login" href="#">Коля Петухов</a>
-        </li>
-        <li class="user-menu-item">
-          <a class="user-menu-link user-logout" href="#">Выйти</a>
-        </li>
-      </ul>
+      <div class="logo-wrapper">
+        <a class="header-logo" href="index.html" aria-current="page">
+          <img class="header-logo-img" src="images/logo-dark.svg" width="145" height="36" alt="Логотип магазина Девайс.">
+        </a>
+      </div>
 
-      <ul class="user-menu-list user-action">
-        <li class="user-menu-item">
-          <a class="user-menu-link user-compare" href="#">Сравнить</a>
-        </li>
-        <li class="user-menu-item">
-          <a class="user-menu-link user-cart" href="#">Корзина
-            <span class="user-count">2</span>
-          </a>
-        </li>
-      </ul>
+      <div class="user-menu">
+        <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
+          <input class="form-search-input" type="search" name="search" placeholder="Поиск по сайту" value="Текст поиска">
+          <button class="form-search-button" type="submit">Найти</button>
+        </form>
+
+        <ul class="user-menu-list">
+          <li class="user-menu-item">
+            <a class="user-menu-link user" href="#">Коля Петухов</a>
+          </li>
+          <li class="user-menu-item">
+            <a class="user-menu-link user-logout" href="#">Выйти</a>
+          </li>
+          <li class="user-menu-item user-compare">
+            <a class="user-menu-link" href="#">Сравнить</a>
+          </li>
+          <li class="user-menu-item user-cart">
+            <a class="user-menu-link" href="#">Корзина
+              <span class="user-count">2</span>
+            </a>
+          </li>
+        </ul>
+      </div>
 
       <nav class="menu">
         <ul class="menu-list">
