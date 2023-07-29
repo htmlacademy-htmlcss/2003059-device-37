@@ -48,7 +48,7 @@ body {
   background-color: #FFFFFF;
 }
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -57,7 +57,7 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
 .container {
   margin: 0 auto;
