@@ -96,6 +96,10 @@ body {
   min-height: 186px;
 }
 
+.header-wrapper {
+  background-image: linear-gradient(180deg,#fff 40px,#FFE17F 40px);
+}
+
 .logo-wrapper {
   padding: 20px 60px 30px;
 }
@@ -116,7 +120,6 @@ body {
   padding: 45px 60px 30px;
   display: grid;
   grid-template-columns: 540px 500px;
-  background-color: #FFE17F;
   color: #000000;
 }
 
@@ -186,7 +189,6 @@ body {
 }
 
 .menu {
-  background-color: #FFE17F;
   padding: 15px 60px 35px;
   position: relative;
 }
