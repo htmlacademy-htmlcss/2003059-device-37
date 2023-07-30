@@ -202,8 +202,9 @@ body {
   position: relative;
 }
 
-.menu-item:focus-within .submenu-column-list {
-  display: block;
+.menu-item:focus-within .submenu {
+  display: grid;
+  grid-template-columns: 200px 165px 150px;
 }
 
 .menu-link {
@@ -218,30 +219,31 @@ body {
 }
 
 .submenu {
+  display: none;
   top: 35px;
   left: -60px;
   margin: 0;
-  padding: 0 60px;
+  padding: 15px 60px 40px;
   position: absolute;
   background-color: #FFE17F;
   list-style-type: none;
-  display: grid;
-  grid-template-columns: 222px repeat(2, 211px);
   width: 1160px;
+  z-index: 10;
+  gap: 50px;
 }
 
 .submenu-column-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: none;
 }
 
 .submenu-column-item {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
 .submenu-column-link {
+  display: block;
   color: #000000;
   text-decoration: none;
   font-size: 16px;
@@ -257,8 +259,8 @@ body {
 /* Slider */
 
 .slider {
-  margin-top: -18px;
-  background-image: linear-gradient(180deg,#FFE17F 154px,#FFFFFF 154px);
+  margin-top: -40px;
+  background-image: linear-gradient(180deg,#FFE17F 152px,#FFFFFF 152px);
 }
 
 .slider-list {
@@ -303,6 +305,7 @@ body {
 }
 
 .slider-description {
+  margin: 0;
   margin-bottom: 50px;
 }
 
@@ -464,7 +467,7 @@ body {
   display: none;
   padding: 72px 0;
   background-repeat: no-repeat;
-  background-position: right 45%;
+  background-position: right 100px top 75px;
 }
 
 .services-delivery {
@@ -489,6 +492,7 @@ body {
 }
 
 .services-description {
+  margin: 0;
   max-width: 500px;
 }
 
@@ -539,6 +543,8 @@ body {
 }
 
 .about-list {
+  margin: 0;
+  padding: 0;
   padding-left: 38px;
   color: #000000;
   font-weight: 700;
@@ -564,6 +570,11 @@ body {
 
 .contacts-address {
   font-style: normal;
+}
+
+.contacts-address-text {
+  margin: 0;
+  padding: 0;
 }
 
 .contacts-address-phone {
@@ -703,7 +714,7 @@ body {
 }
 
 .social-list {
-  max-width: 500px;
+  max-width: 440px;
   width: 100%;
   justify-content: center;
   display: flex;
