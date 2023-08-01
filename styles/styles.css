@@ -120,6 +120,7 @@ body {
   display: grid;
   grid-template-columns: 540px 500px;
   color: #000000;
+  align-items: center;
 }
 
 .form-search {
@@ -159,7 +160,7 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 146px 56px repeat(2, 110px);
+  grid-template-columns: 150px 56px repeat(2, 110px);
   gap: 26px;
   list-style-type: none;
   align-items: center;
@@ -168,7 +169,6 @@ body {
 }
 
 .user-menu-item {
-  display: grid;
   background-repeat: no-repeat;
 }
 
@@ -183,6 +183,10 @@ body {
   justify-self: start;
   background-image: url("../images/icons/menu-user.svg");
   background-position: center left 3px;
+}
+
+.user-login-on {
+  grid-column: 1/2;
 }
 
 .user-logout {
@@ -217,7 +221,8 @@ body {
 }
 
 .menu {
-  padding: 0 60px 35px;
+  /* padding: 0 60px 35px; */
+  padding: 0 60px 19px;
   position: relative;
 }
 
@@ -225,14 +230,17 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: grid;
-  grid-template-columns: 1fr repeat(3, min-content);
+  /* display: grid;
+  grid-template-columns: 1fr repeat(3, min-content); */
   gap: 20px 45px;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .menu-item:first-child {
   justify-self: start;
+  flex-grow: 1;
 }
 
 .menu-item:focus-within .submenu {
@@ -256,13 +264,15 @@ body {
   position: relative;
   margin-right: auto;
   padding-right: 57px;
+  max-width: 295px;
 }
 
 .menu-catalog::after {
   content: "";
   position: absolute;
   top: 0;
-  right: -10px;
+  /* right: -10px; */
+  right: 2px;
   background-image: url(../images/icons/menu-plus.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -316,7 +326,8 @@ body {
 /* Slider */
 
 .slider {
-  margin-top: -52px;
+  /* margin-top: -52px; */
+  margin-top: -36px;
   background-image: linear-gradient(180deg,#FFE17F 150px, transparent 150px);
   position: relative;
 }
@@ -865,7 +876,6 @@ body {
   font-size: 16px;
   line-height: 20px;
   max-width: 240px;
-  margin-right: 120px;
 }
 
 .footer-menu-list {
@@ -877,6 +887,7 @@ body {
   max-width: 500px;
   column-gap: 30px;
   align-self: baseline;
+  margin-left: 120px;
 }
 
 .footer-menu-link {
@@ -925,6 +936,7 @@ body {
   margin: 0;
   padding: 0;
   gap: 15px;
+  margin-left: 360px;
 }
 
 .social-item {
@@ -990,6 +1002,19 @@ body {
   position: relative;
 }
 
+.breadcrumbs-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: -22px;
+  background-image: url(../images/icons/breadcrumbs-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  height: 10px;
+  width: 7px;
+}
+
 .breadcrumbs-link {
   display: flex;
   color: #000000;
@@ -1010,7 +1035,8 @@ body {
 }
 
 .catalog-filter {
-  padding: 25px 60px;
+  /* padding: 25px 60px; */
+  padding: 25px 40px 25px 60px;
   color: #000000;
 }
 
@@ -1027,6 +1053,11 @@ body {
 
 .catalog-filter-title {
   margin-bottom: 60px;
+  word-wrap: break-word;
+}
+
+.catalog-filter-form {
+  word-break: break-all;
 }
 
 .catalog-filter-group {
@@ -1034,6 +1065,7 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
+  max-width: 200px;
 }
 
 .catalog-filter-name {
@@ -1064,6 +1096,58 @@ body {
   margin-bottom: 17px;
 }
 
+.control {
+  padding-left: 36px;
+  position: relative;
+  display: block;
+}
+
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 3px;
+  border: 2px solid #CCCCCC;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  border: 2px solid #000000;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  content: url(../images/icons/checkmark.svg);
+  width: 10px;
+  height: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -2px;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark {
+  border: 2px solid #000000;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
 .catalog-filter-button {
   width: 100%;
 }
@@ -1082,20 +1166,49 @@ body {
   color: #000000;
 }
 
+.products-title {
+  max-width: 200px;
+  word-wrap: break-word;
+}
+
 .sorting-control {
+  min-width: 141px;
+  max-width: 250px;
+  padding-right: 35px;
   height: 30px;
   border: none;
-  margin: 0 auto;
+  margin-left: auto;
   background-color: transparent;
   font-family: inherit;
   font-size: 18px;
   line-height: 30px;
+  -webkit-appearance: none;
+    -moz-appearance: none;
+  appearance: none;
+  background-image: url(../images/icons/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 .sorting-toggle-wrapper {
   display: flex;
+  flex-wrap: wrap;
   width: 60px;
+  min-height: 30px;
+  margin-left: auto;
+}
+
+.sorting-toggle {
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
   height: 30px;
+  background-image: url("../images/icons/sorting.svg");
+}
+
+.sorting-toggle:nth-child(2) {
+  transform: rotate(180deg);
 }
 
 .products-list {
@@ -1108,8 +1221,29 @@ body {
 }
 
 .product-card {
+  position: relative;
   min-height: 380px;
   cursor: pointer;
+}
+
+.product-card-new::before {
+  content: "NEW";
+  position: absolute;
+  top: 26px;
+  right: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid rgba(0, 0, 0, .6);border-radius: 50%;
+  font-family: "Raleway", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.60);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  z-index: 2;
 }
 
 .product-image-wrapper {
@@ -1138,6 +1272,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgba(240, 240, 240, 0.80);
+  z-index: 10;
 }
 
 .product-text-wrapper {
@@ -1170,7 +1305,7 @@ body {
 .catalog-show-more {
   display: flex;
   margin: 0 40px 44px;
-  padding: 18px 39px;
+  padding: 15px 39px;
   justify-content: center;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 16px;
