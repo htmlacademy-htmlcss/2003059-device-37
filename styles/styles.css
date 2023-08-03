@@ -311,7 +311,7 @@ body {
 }
 
 .user-logout .user-menu-link {
-  opacity: .3;
+  color: rgba(0, 0, 0, .3);
   padding-left: 0;
 }
 
@@ -937,12 +937,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
-  background-color: rgba(220, 220, 220, 0.50);
+  background-color: rgba(220, 220, 220, .5);
   /* opacity: .3; */
 }
 
 .delivery-button:hover::after {
   opacity: 1;
+  background-color: rgba(220, 220, 220, .5);
 }
 
 /* About */ /* Contacts */
@@ -1745,20 +1746,31 @@ body {
 
 .sorting-toggle {
   display: flex;
-  background-repeat: no-repeat;
-  background-position: center;
   width: 30px;
   height: 30px;
-  background-image: url("../images/icons/sorting.svg");
-  opacity: .2;
+  position: relative;
+}
+
+.sorting-toggle::before {
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  left: 9px;
+  display: block;
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  border-left: 5.5px solid transparent;
+  border-right: 5.5px solid transparent;
+  border-bottom: 10px solid rgba(0,0,0,.2);
 }
 
 .sorting-toggle:nth-child(2) {
   transform: rotate(180deg);
 }
 
-.sorting-toggle:hover {
-  opacity: .5;
+.sorting-toggle:hover::before {
+  border-bottom-color: rgba(0,0,0,.5);
 }
 
 .sorting-toggle:focus,
@@ -1767,8 +1779,10 @@ body {
 }
 
 .sorting-toggle:active {
-  opacity: 1;
   outline: none;
+}
+.sorting-toggle:active::before {
+  border-bottom-color: #000000;
 }
 
 .products-list {
