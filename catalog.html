@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Интернет-магазин Device</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header catalog">
     <div class="container header-wrapper">
 
       <div class="logo-wrapper">
@@ -18,7 +20,8 @@
 
       <div class="user-menu">
         <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
-          <input class="form-search-input" type="search" name="search" placeholder="Поиск по сайту" value="Текст поиска">
+          <label class="visually-hidden" for="search">Строка поиска</label>
+          <input class="form-search-input" type="search" name="search" id="search" placeholder="Поиск по сайту" value="Текст поиска">
           <button class="form-search-button" type="submit">Найти</button>
         </form>
 
@@ -45,7 +48,9 @@
       <nav class="menu">
         <ul class="menu-list">
           <li class="menu-item">
-            <a class="menu-link menu-catalog" href="#">Каталог товаров</a>
+            <input class="visually-hidden submenu-checkbox" type="checkbox" id="submenu-checkbox">
+            <label class="menu-link menu-catalog" for="submenu-checkbox">Каталог товаров</label>
+
             <ul class="submenu">
               <li class="submenu-column">
                 <ul class="submenu-column-list">
@@ -234,8 +239,8 @@
               </div>
 
               <a class="product-link" href="#">
-                <div class="product-image-wrapper">
-                  <img class="product-image" src="images/products/product-1.jpg" width="360" height="380" alt="Фотография товара: Любительская селфи-палка.">
+                <div class="product-img-wrapper">
+                  <img class="product-img" src="images/products/product-1.jpg" width="360" height="380" alt="Фотография товара: Любительская селфи-палка.">
                 </div>
 
                 <div class="product-text-wrapper">
@@ -251,8 +256,8 @@
               </div>
 
               <a class="product-link" href="#">
-                <div class="product-image-wrapper">
-                  <img class="product-image" src="images/products/product-2.jpg" width="360" height="380" alt="Фотография товара: Профессиональная селфи-палка.">
+                <div class="product-img-wrapper">
+                  <img class="product-img" src="images/products/product-2.jpg" width="360" height="380" alt="Фотография товара: Профессиональная селфи-палка.">
                 </div>
 
                 <div class="product-text-wrapper">
@@ -268,8 +273,8 @@
               </div>
 
               <a class="product-link" href="#">
-                <div class="product-image-wrapper">
-                  <img class="product-image" src="images/products/product-3.jpg" width="360" height="380" alt="Фотография товара: Непотопляемая селфи-палка.">
+                <div class="product-img-wrapper">
+                  <img class="product-img" src="images/products/product-3.jpg" width="360" height="380" alt="Фотография товара: Непотопляемая селфи-палка.">
                 </div>
 
                 <div class="product-text-wrapper">
@@ -285,8 +290,8 @@
               </div>
 
               <a class="product-link" href="#">
-                <div class="product-image-wrapper">
-                  <img class="product-image" src="images/products/product-4.jpg" width="360" height="380" alt="Фотография товара: Селфи-палка «Следуй за мной».">
+                <div class="product-img-wrapper">
+                  <img class="product-img" src="images/products/product-4.jpg" width="360" height="380" alt="Фотография товара: Селфи-палка «Следуй за мной».">
                 </div>
 
                 <div class="product-text-wrapper">
