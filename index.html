@@ -461,7 +461,7 @@
 
           <div class="field-group delivery-form-email">
             <label class="delivery-form-label" for="email">Ваш e-mail:</label>
-            <input class="delivery-form-field  delivery-form-field-error" name="email" id="email" type="email" placeholder="Введите email" value="почта">
+            <input class="delivery-form-field delivery-form-field-error" name="email" id="email" type="email" placeholder="Введите email" value="почта">
             <span class="field-message field-message-error">Забавный у вас адрес</span>
           </div>
 
@@ -480,14 +480,28 @@
             </div>
 
             <div class="form-count-wrapper">
-              <button class="count-button count-button-minus" type="button">
+              <button class="count-button" type="button">
                 <span class="visually-hidden">Уменьшить количество.</span>
+                <svg class="count-button-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 7H0V9H16V7Z" fill="black"/>
+                  </svg>
               </button>
 
               <input class="delivery-form-field count-field" type="number" id="count" name="count" value="1">
 
-              <button class="count-button count-button-plus" type="button">
+              <button class="count-button" type="button">
                 <span class="visually-hidden">Увеличить количество.</span>
+                <svg class="count-button-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_39328_655)">
+                  <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_39328_655">
+                  <rect width="16" height="16" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+
               </button>
             </div>
           </div>
