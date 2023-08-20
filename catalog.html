@@ -11,7 +11,6 @@
 <body>
   <header class="page-header catalog">
     <div class="container header-wrapper">
-
       <div class="logo-wrapper">
         <a class="header-logo" href="index.html" aria-current="page">
           <img class="header-logo-img" src="images/logo-dark.svg" width="145" height="36" alt="Логотип магазина Девайс.">
@@ -26,13 +25,15 @@
         </form>
 
         <nav class="user-navigation">
-          <ul class="user-menu-list">
-            <li class="user-menu-item user-login user-login-on">
+          <ul class="user-menu-list user-menu-login">
+            <li class="user-menu-item user-login">
               <a class="user-menu-link" href="#">Коля Петухов</a>
             </li>
             <li class="user-menu-item user-logout">
               <a class="user-menu-link" href="#">Выйти</a>
             </li>
+          </ul>
+          <ul class="user-menu-list user-menu-action">
             <li class="user-menu-item user-compare">
               <a class="user-menu-link" href="#">Сравнить</a>
             </li>
@@ -47,9 +48,9 @@
 
       <nav class="menu">
         <ul class="menu-list">
-          <li class="menu-item">
+          <li class="menu-item menu-catalog">
             <input class="visually-hidden submenu-checkbox" type="checkbox" id="submenu-checkbox">
-            <label class="menu-link menu-catalog" for="submenu-checkbox">Каталог товаров</label>
+            <label class="menu-link" for="submenu-checkbox">Каталог товаров</label>
 
             <ul class="submenu">
               <li class="submenu-column">
@@ -58,7 +59,7 @@
                     <a class="submenu-column-link" href="catalog.html">Виртуальная реальность</a>
                   </li>
                   <li class="submenu-column-item">
-                    <a class="submenu-column-link" href="catalog.html" aria-current="page">Моноподы для cелфи</a>
+                    <a class="submenu-column-link" href="catalog.html">Моноподы для cелфи</a>
                   </li>
                   <li class="submenu-column-item">
                     <a class="submenu-column-link" href="catalog.html">Экшн-камеры</a>
@@ -123,10 +124,9 @@
           <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-name">Стоимость</legend>
-
               <div class="range">
                 <div class="range-scale">
-                  <div class="range-bar"  style="left: 0; width: 119px">
+                  <div class="range-bar" style="left: 0; width: 119px">
                     <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
@@ -136,7 +136,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="range-wrapper-inputs">
                 <label class="catalog-filter-label">
                   <input class="range-input min-price" type="number" value="0" name="min-price">
@@ -332,7 +331,6 @@
         </section>
       </div>
     </div>
-
   </main>
 
   <footer class="page-footer footer">
