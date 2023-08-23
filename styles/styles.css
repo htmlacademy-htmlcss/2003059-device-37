@@ -441,7 +441,7 @@ body {
 .menu-catalog .menu-link::after {
   content: "";
   display: flex;
-  background-image: url(../images/icons/menu-plus.svg);
+  background-image: url("../images/icons/menu-plus.svg");
   background-repeat: no-repeat;
   background-position: center;
   height: 50px;
@@ -488,7 +488,7 @@ body {
 }
 
 .submenu-checkbox:checked + .menu-link::after {
-  background-image: url(../images/icons/menu-minus.svg);
+  background-image: url("../images/icons/menu-minus.svg");
 }
 
 .submenu-checkbox:checked ~ .submenu {
@@ -983,7 +983,7 @@ body {
 }
 
 .delivery-button::after {
-  content: "";
+  content: "i";
   position: absolute;
   width: 40px;
   height: 40px;
@@ -991,23 +991,21 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 18px;
   border-radius: 50%;
   background-color: rgba(220, 220, 220, 0.5);
+  color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 0;
 }
 
-.delivery-tooltip {
-  opacity: 0.3;
-  position: absolute;
-  width: 2px;
-  height: 12px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 62px;
-}
-
-.delivery-button:hover .delivery-tooltip {
-  opacity: 1;
+.delivery-button:hover::after {
+  color: rgba(0, 0, 0, 1);
 }
 
 /* About */ /* Contacts */
@@ -1189,7 +1187,7 @@ body {
   background-color: #dcdcdc;
 }
 
-.subscribe-email:invalid {
+.subscribe-email:focus:invalid {
   border-color: #ff3d3d;
 }
 
@@ -1484,7 +1482,7 @@ body {
   position: absolute;
   top: 5px;
   right: -22px;
-  background-image: url(../images/icons/breadcrumbs-arrow.svg);
+  background-image: url("../images/icons/breadcrumbs-arrow.svg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -1716,7 +1714,7 @@ body {
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
-  content: url(../images/icons/checkmark.svg);
+  content: url("../images/icons/checkmark.svg");
   width: 10px;
   height: 10px;
   left: 50%;
@@ -1801,7 +1799,7 @@ body {
   -webkit-appearance: none;
     -moz-appearance: none;
   appearance: none;
-  background-image: url(../images/icons/select-arrow.svg);
+  background-image: url("../images/icons/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right center;
   cursor: pointer;
@@ -2282,11 +2280,11 @@ body {
 }
 
 .delivery-form-name .delivery-form-field {
-  background-image: url(../images/icons/modal-name.svg);
+  background-image: url("../images/icons/modal-name.svg");
 }
 
 .delivery-form-email .delivery-form-field {
-  background-image: url(../images/icons/modal-email.svg);
+  background-image: url("../images/icons/modal-email.svg");
 }
 
 .field-message {
@@ -2363,7 +2361,7 @@ body {
 }
 
 .tooltip-text:after {
-  content:"";
+  content: "";
   background-image: url("../images/icons/tooltip-arrow.svg");
   background-repeat: no-repeat;
   width: 14px;
@@ -2452,7 +2450,7 @@ body {
 
 .popover-content::before {
   content: "";
-  background-image: url(../images/icons/tooltip-arrow.svg);
+  background-image: url("../images/icons/tooltip-arrow.svg");
   background-repeat: no-repeat;
   width: 14px;
   height: 6px;
@@ -2553,7 +2551,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   justify-content: space-between;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   margin-bottom: 20px;
 }
 

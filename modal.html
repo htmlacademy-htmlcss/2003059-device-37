@@ -20,7 +20,7 @@
       <div class="user-menu">
         <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
           <label class="visually-hidden" for="search">Строка поиска</label>
-          <input class="form-search-input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+          <input class="form-search-input" type="search" name="search" id="search" placeholder="Поиск по сайту" required>
           <button class="form-search-button" type="submit">Найти</button>
         </form>
 
@@ -313,9 +313,7 @@
       <h2 class="visually-hidden">Заказ доставки.</h2>
 
       <div class="container delivery-button-wrapper">
-        <button class="delivery-button" type="button">Доставим редкий товар под заказ
-          <img class="delivery-tooltip" width="2" height="12" src="images/icons/delivery-tooltip.svg" aria-hidden="true" alt="Иконка всплывающей подсказки.">
-        </button>
+        <button class="delivery-button" type="button">Доставим редкий товар под заказ</button>
       </div>
     </section>
 
@@ -367,7 +365,7 @@
 
         <div class="subscribe-form-wrapper">
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscribe-email" type="email" name="subscribe-email" placeholder="Ваш e-mail">
+            <input class="subscribe-email" type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
             <button class="subscribe-button button" type="submit">Подписаться</button>
           </form>
 
@@ -451,7 +449,7 @@
 
           <div class="field-group delivery-form-email">
             <label class="delivery-form-label" for="email">Ваш e-mail:</label>
-            <input class="delivery-form-field delivery-form-field-error" name="email" id="email" type="email" placeholder="Введите email" value="почта">
+            <input class="delivery-form-field delivery-form-field-error" name="email" id="email" type="email" placeholder="Введите email" value="почта" required>
             <span class="field-message field-message-error">Забавный у вас адрес</span>
           </div>
 
@@ -496,7 +494,7 @@
             </div>
           </div>
 
-          <button class="delivery-form-button button">Отправить</button>
+          <button class="delivery-form-button button" type="submit">Отправить</button>
         </form>
       </section>
     </div>
