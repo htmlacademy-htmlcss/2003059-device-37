@@ -402,7 +402,8 @@ body {
   position: relative;
 }
 
-.menu-link-current {
+.menu-link-current,
+.submenu-column-link.menu-link-current {
   border-bottom: 2px solid #000000;
 }
 
@@ -477,7 +478,7 @@ body {
   top: auto;
   left: -60px;
   margin: 0;
-  padding: 14px 60px 40px;
+  padding: 14px 60px 42px;
   position: absolute;
   background-color: #ffe17f;
   list-style-type: none;
@@ -516,7 +517,7 @@ body {
 }
 
 .submenu-column-item {
-  margin-bottom: 17px;
+  margin-bottom: 15px;
   justify-self: start;
 }
 
@@ -526,7 +527,9 @@ body {
   text-decoration: none;
   font-size: 16px;
   line-height: 18px;
+  border-bottom: 2px solid transparent;
 }
+
 
 /* Main */
 
