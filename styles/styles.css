@@ -2444,6 +2444,16 @@ body {
   display: none;
 }
 
+.popover::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -15px;
+  width: 100%;
+  height: 15px;
+  background-color: transparent;
+}
+
 .user-cart .user-menu-link:hover + .popover {
   display: block;
 }
